@@ -16,7 +16,7 @@ namespace MiniMartHub
             // Gán UserControl vào MainContentControl
             MainContentControl.Content = new UserManagement();
         }
-
+        //asdasd
         private void dgProductManagement_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             // Gán UserControl vào MainContentControl
