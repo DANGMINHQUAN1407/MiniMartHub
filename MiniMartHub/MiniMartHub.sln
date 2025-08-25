@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniMartHub", "MiniMartHub.csproj", "{BDB1C12D-5221-8E3C-F859-E2917A1171CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BDB1C12D-5221-8E3C-F859-E2917A1171CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB1C12D-5221-8E3C-F859-E2917A1171CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB1C12D-5221-8E3C-F859-E2917A1171CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB1C12D-5221-8E3C-F859-E2917A1171CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {600FB145-1B14-4405-BDC9-164F2027F5C9}
+	EndGlobalSection
+EndGlobal
