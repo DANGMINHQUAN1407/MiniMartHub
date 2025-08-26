@@ -12,7 +12,7 @@ namespace DAL.Repo
         {
             _context = new Prn212block3WContext();
         }
-
+        //git
         public List<Product> GetAll()
         {
             return _context.Products.ToList();
