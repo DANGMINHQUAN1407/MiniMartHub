@@ -18,6 +18,17 @@ namespace MiniMartHub
             _service = new ProductService();
             LoadProducts();
         }
+        private void UpdateProductStatus(Product product)
+        {
+            if (product.QuantityInStorage <= 0)
+            {
+                product.Status = "INACTIVE";
+            }
+            else
+            {
+                product.Status = "ACTIVE";
+            }
+        }
 
         private void LoadProducts()
         {
@@ -40,6 +51,9 @@ namespace MiniMartHub
             {
                 try
                 {
+                    // cập nhật status theo quantity
+                    UpdateProductStatus(dialog.Product);
+
                     _service.AddProduct(dialog.Product);
                     _products.Add(dialog.Product);
                 }
@@ -59,6 +73,9 @@ namespace MiniMartHub
                 {
                     try
                     {
+                        // cập nhật status theo quantity
+                        UpdateProductStatus(dialog.Product);
+
                         _service.UpdateProduct(dialog.Product);
 
                         int index = _products.IndexOf(selected);
@@ -78,6 +95,7 @@ namespace MiniMartHub
                 MessageBox.Show("Vui lòng chọn sản phẩm để sửa.");
             }
         }
+
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
         {
